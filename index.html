@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fi" data-theme="dark" data-page="home">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Ao Jiang — henkilökohtainen CV-sivusto (FI/EN)." />
+  <title>Ao Jiang — Etusivu</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="Home">
+      <span class="logo" aria-hidden="true">AJ</span>
+      <span class="brandText">Ao Jiang</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="navlink" href="./index.html" data-nav="home">Etusivu</a>
+      <a class="navlink" href="./profile.html" data-nav="profile">Henkilötiedot</a>
+      <a class="navlink" href="./education.html" data-nav="education">Koulutus</a>
+      <a class="navlink" href="./skills.html" data-nav="skills">Taidot</a>
+      <a class="navlink" href="./social.html" data-nav="social">Sosiaalinen</a>
+    </nav>
+
+    <div class="actions">
+      <button class="iconBtn" id="langBtn" type="button" aria-label="Vaihda kieli">
+        <span class="icon">🌍</span><span class="hideSm" id="langLabel">FI</span>
+      </button>
+      <button class="iconBtn" id="themeBtn" type="button" aria-label="Vaihda teema">
+        <span class="icon" id="themeIcon">🌙</span><span class="hideSm" data-i18n="ui.theme">Teema</span>
+      </button>
+      <button class="iconBtn menuBtn" id="menuBtn" type="button" aria-label="Valikko">☰</button>
+    </div>
+  </header>
+
+  <div class="mobileNav" id="mobileNav" aria-hidden="true">
+    <a href="./index.html" data-nav="home">Etusivu</a>
+    <a href="./profile.html" data-nav="profile">Henkilötiedot</a>
+    <a href="./education.html" data-nav="education">Koulutus</a>
+    <a href="./skills.html" data-nav="skills">Taidot</a>
+    <a href="./social.html" data-nav="social">Sosiaalinen</a>
+  </div>
+
+  <main class="container">
+    <section class="hero section">
+      <div class="heroLeft">
+        <p class="pill" data-i18n="home.pill">Yksinkertainen • Tyylikäs • FI/EN</p>
+        <h1 class="title">
+          <span data-i18n="home.hello">Hei, minä olen</span>
+          <span class="grad">Ao Jiang</span>.
+        </h1>
+        <p class="subtitle" data-i18n="home.sub">
+          Lukio-opiskelija Loimaalta. Tämä on henkilökohtainen sivustoni — jaettu selkeisiin sivuihin.
+        </p>
+
+        <div class="heroCtas">
+          <a class="btn" href="./profile.html" data-i18n="home.cta1">Aloita profiilista</a>
+          <a class="btn ghost" href="./social.html" data-i18n="home.cta2">Ota yhteyttä</a>
+        </div>
+
+        <div class="miniGrid">
+          <article class="card mini">
+            <h3 data-i18n="home.cards.loc">Sijainti</h3>
+            <p class="muted">Loimaa, Suomi</p>
+          </article>
+          <article class="card mini">
+            <h3 data-i18n="home.cards.study">Opiskelu</h3>
+            <p class="muted">Novida Lukio (2023–)</p>
+          </article>
+          <article class="card mini">
+            <h3 data-i18n="home.cards.focus">Painotus</h3>
+            <p class="muted" data-i18n="home.cards.focusText">Kielet + STEM</p>
+          </article>
+        </div>
+      </div>
+
+      <aside class="heroRight">
+        <div class="card profileCard">
+          <div class="avatar" aria-hidden="true">AJ</div>
+          <div class="profileText">
+            <p class="name">Ao Jiang</p>
+            <p class="muted" data-i18n="ui.role">Lukio-opiskelija</p>
+          </div>
+          <div class="chipRow">
+            <span class="chip">Loimaa</span>
+            <span class="chip">FI/EN/中文</span>
+          </div>
+          <div class="divider"></div>
+          <div class="quickFacts">
+            <div class="fact">
+              <span class="factK" data-i18n="ui.school">Koulu</span>
+              <span class="factV">Novida Lukio</span>
+            </div>
+            <div class="fact">
+              <span class="factK" data-i18n="ui.born">Synt.</span>
+              <span class="factV">2007-12-09</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card tipCard">
+          <h3 data-i18n="home.featuresTitle">Toiminnot</h3>
+          <ul class="list">
+            <li data-i18n="home.f1">Teeman vaihto (tumma/vaalea)</li>
+            <li data-i18n="home.f2">Kielen vaihto (FI/EN)</li>
+            <li data-i18n="home.f3">Nykyinen sivu korostuu valikossa</li>
+            <li data-i18n="home.f4">Sähköpostin kopiointi yhdellä klikkauksella</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">© <span id="year"></span> Ao Jiang</span>
+      <a class="muted link" href="./profile.html" data-i18n="home.next">Seuraavaksi: Henkilötiedot →</a>
+    </footer>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fi" data-theme="dark" data-page="social">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ao Jiang — Sosiaalinen</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html">
+      <span class="logo" aria-hidden="true">AJ</span>
+      <span class="brandText">Ao Jiang</span>
+    </a>
+
+    <nav class="nav">
+      <a class="navlink" href="./index.html" data-nav="home">Etusivu</a>
+      <a class="navlink" href="./profile.html" data-nav="profile">Henkilötiedot</a>
+      <a class="navlink" href="./education.html" data-nav="education">Koulutus</a>
+      <a class="navlink" href="./skills.html" data-nav="skills">Taidot</a>
+      <a class="navlink" href="./social.html" data-nav="social">Sosiaalinen</a>
+    </nav>
+
+    <div class="actions">
+      <button class="iconBtn" id="langBtn" type="button">
+        <span class="icon">🌍</span><span class="hideSm" id="langLabel">FI</span>
+      </button>
+      <button class="iconBtn" id="themeBtn" type="button">
+        <span class="icon" id="themeIcon">🌙</span><span class="hideSm" data-i18n="ui.theme">Teema</span>
+      </button>
+      <button class="iconBtn menuBtn" id="menuBtn" type="button">☰</button>
+    </div>
+  </header>
+
+  <div class="mobileNav" id="mobileNav" aria-hidden="true">
+    <a href="./index.html" data-nav="home">Etusivu</a>
+    <a href="./profile.html" data-nav="profile">Henkilötiedot</a>
+    <a href="./education.html" data-nav="education">Koulutus</a>
+    <a href="./skills.html" data-nav="skills">Taidot</a>
+    <a href="./social.html" data-nav="social">Sosiaalinen</a>
+  </div>
+
+  <main class="container">
+    <section class="section">
+      <header class="sectionHead">
+        <h2 data-i18n="social.title">Sosiaalinen kortti</h2>
+        <p class="muted" data-i18n="social.desc">Yhteystiedot ja nopea kopiointi.</p>
+      </header>
+
+      <div class="grid2">
+        <article class="card socialCard">
+          <h3 data-i18n="social.card.title">Yhteys</h3>
+          <p class="muted" data-i18n="social.card.body">Voit ottaa yhteyttä sähköpostilla. Nappi kopioi osoitteen leikepöydälle.</p>
+
+          <div class="socialRow">
+            <div class="socialItem">
+              <span class="socialK">Email</span>
+              <a class="socialV" href="mailto:kimijiang07@gmail.com">kimijiang07@gmail.com</a>
+            </div>
+            <button class="btn small" id="copyEmailBtn" type="button" data-copy="kimijiang07@gmail.com" data-i18n="social.copy">
+              Kopioi
+            </button>
+          </div>
+
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </article>
+
+        <article class="card">
+          <h3 data-i18n="social.quick.title">Nopea yhteenveto</h3>
+          <div class="kv">
+            <div class="row"><span class="k" data-i18n="social.quick.lang">Kielet</span><span class="v">FI • 中文 • EN</span></div>
+            <div class="row"><span class="k" data-i18n="social.quick.focus">Fokus</span><span class="v" data-i18n="social.quick.focusV">Opiskelu + osaamisen kehitys</span></div>
+            <div class="row"><span class="k" data-i18n="social.quick.site">Sivuston tarkoitus</span><span class="v" data-i18n="social.quick.siteV">Henkilökohtainen esittely</span></div>
+          </div>
+          <div class="divider"></div>
+          <p class="muted tiny" data-i18n="social.footer">
+            Päivitä sisältöä helposti: muokkaa tekstejä HTML-tiedostoissa ja pushaa GitHubiin.
+          </p>
+        </article>
+      </div>
+
+      <footer class="footer">
+        <span class="muted">© <span id="year"></span> Ao Jiang</span>
+        <a class="muted link" href="./index.html" data-i18n="nav.backHome">← Takaisin etusivulle</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
